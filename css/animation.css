@@ -1,0 +1,16 @@
+.rectangle_1 {
+  animation-name: move;
+  animation-direction: alternate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes move {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(325px, 294px);
+  }
+}
