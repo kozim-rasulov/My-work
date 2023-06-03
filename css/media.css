@@ -16,6 +16,12 @@
   }
 }
 @media (max-width: 1199px) {
+  .works__nav {
+    flex-wrap: wrap;
+    height: auto;
+    padding-right: 0;
+    overflow: visible;
+  }
   .works__item {
     width: 50%;
   }
@@ -61,6 +67,17 @@
   .about__title {
     font-size: 30px;
     line-height: auto;
+  }
+  .about__button {
+    margin-left: 0;
+  }
+  .works__nav {
+    flex-wrap: wrap;
+    height: 390px;
+    padding-right: 5px;
+    overflow: unset;
+    overflow-y: scroll;
+
   }
   .works__item {
     width: 100%;

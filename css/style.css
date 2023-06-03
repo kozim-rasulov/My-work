@@ -458,11 +458,12 @@ p {
   position: relative;
 }
 .works__nav {
-  height: 360px;
+  height: 390px;
   overflow-y: scroll;
   flex-wrap: nowrap;
-  padding-right: 10px;
+  padding-right: 5px;
   border-radius: 8px;
+  scroll-snap-type: y mandatory;
 }
 .works__nav::-webkit-scrollbar {
   width: 10px;
@@ -470,6 +471,9 @@ p {
 .works__nav::-webkit-scrollbar-thumb {
   background: var(--title);
   border-radius: 20px;
+}
+.works__item {
+  scroll-snap-align: start;
 }
 .works__tab {
   width: 100%;
@@ -482,6 +486,7 @@ p {
   text-transform: uppercase;
   text-align: left;
   padding: 19px 20px;
+  height: 65px;
 }
 .works__tab.active, .works__tab:hover {
   background: var(--title);
@@ -494,7 +499,7 @@ p {
   border-radius: 0 0 8px 8px;
 } */
 .works__content {
-  height: 360px;
+  min-height: 390px;
   background: var(--body);
   box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
   border-radius: 8px;
@@ -502,7 +507,7 @@ p {
 }
 .works__img {
   width: 100%;
-  max-height: 320px;
+  max-height: 350px;
   object-fit: cover;
   object-position: top;
   border-radius: 0 0 8px 8px;
@@ -524,7 +529,12 @@ p {
   margin-bottom: 27px;
 }
 .works__yourself {
-  color: red;
+  color: orange;
+  font-weight: 600;
+}
+.works__school {
+  color: var(--title);
+  font-weight: 600;
 }
 .works__link {
   max-width: 190px;
