@@ -224,6 +224,8 @@ p {
   max-width: 299px;
   width: 100%;
   margin: 0 auto 50px;
+  text-transform: uppercase;
+
 }
 
 .slider__logo {
@@ -338,7 +340,7 @@ p {
 }
 
 .about__button {
-  max-width: 190px;
+  max-width: 260px;
   width: 100%;
   margin-left: 80px;
   padding: 14px;
@@ -455,6 +457,20 @@ p {
 .works {
   position: relative;
 }
+.works__nav {
+  height: 360px;
+  overflow-y: scroll;
+  flex-wrap: nowrap;
+  padding-right: 10px;
+  border-radius: 8px;
+}
+.works__nav::-webkit-scrollbar {
+  width: 10px;
+}
+.works__nav::-webkit-scrollbar-thumb {
+  background: var(--title);
+  border-radius: 20px;
+}
 .works__tab {
   width: 100%;
   border: none;
@@ -471,13 +487,14 @@ p {
   background: var(--title);
   color: var(--body);
 }
-.works__item:first-of-type .works__tab {
+/* .works__item:first-of-type .works__tab {
   border-radius: 8px 8px 0 0;
 }
 .works__item:last-of-type .works__tab {
   border-radius: 0 0 8px 8px;
-}
+} */
 .works__content {
+  height: 360px;
   background: var(--body);
   box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
   border-radius: 8px;
@@ -505,6 +522,9 @@ p {
   text-transform: capitalize;
   line-height: 150%;
   margin-bottom: 27px;
+}
+.works__yourself {
+  color: red;
 }
 .works__link {
   max-width: 190px;
