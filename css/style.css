@@ -176,6 +176,7 @@ p {
   font-size: 24px;
   line-height: 16px;
   text-transform: capitalize;
+  transition: .5s;
 }
 
 .menu__link:hover {
@@ -503,7 +504,7 @@ p {
   background: var(--body);
   box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
   border-radius: 8px;
-  padding: 20px 30px 20px 20px;
+  padding: 20px;
 }
 .works__img {
   width: 100%;
@@ -528,6 +529,9 @@ p {
   line-height: 150%;
   margin-bottom: 27px;
 }
+.works__descr:last-of-type {
+  margin-bottom: 0;
+}
 .works__yourself {
   color: orange;
   font-weight: 600;
@@ -536,11 +540,31 @@ p {
   color: var(--title);
   font-weight: 600;
 }
+.works__tools {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 35px);
+  grid-auto-rows: 25px;
+  text-align: center;
+  gap: 10px;
+
+}
+.works__tools span {
+  cursor: pointer;
+}
+.works__tools span:before {
+  transition: 0.5s;
+}
+.works__icon {
+  font-size: 25px;
+  
+}
 .works__link {
+  margin-top: 27px;
   max-width: 190px;
   width: 100%;
   text-transform: capitalize;
-  margin-left: 30px;
+  /* margin-left: 30px; */
   font-size: 18px;
   font-weight: 600;
 }

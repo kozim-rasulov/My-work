@@ -79,6 +79,9 @@
     overflow-y: scroll;
 
   }
+  .works__tools {
+    justify-content: center;
+  }
   .works__item {
     width: 100%;
   }
@@ -96,6 +99,10 @@
   }
   .works__descr {
     font-size: 16px;
+  }
+  .works__link {
+    margin: 0 auto;
+    margin-top: 27px;
   }
   
 }
