@@ -95,6 +95,7 @@ p {
 }
 
 .rectangle_5 {
+  display: none;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -140,6 +141,15 @@ p {
   top: -130px;
   left: 0;
   max-width: 60%;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--title);
+  border-radius: 8px;
 }
 
 /* Root end */

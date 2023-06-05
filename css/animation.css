@@ -1,5 +1,5 @@
 .rectangle_1 {
-  animation-name: move;
+  /* animation-name: move; */
   animation-direction: alternate;
   animation-duration: 5s;
   animation-iteration-count: infinite;
